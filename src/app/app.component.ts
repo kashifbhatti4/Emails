@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { EmailCacheService } from './services/email.cache.service';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,9 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  name: string
+
+  constructor( private emailCacheService: EmailCacheService){
+    this.name = 'Angular ' + VERSION.major;
+  }
 }
