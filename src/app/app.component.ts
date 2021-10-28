@@ -11,5 +11,6 @@ export class AppComponent  {
 
   constructor( private emailCacheService: EmailCacheService){
     this.name = 'Angular ' + VERSION.major;
+    this.emailCacheService.getEmails();
   }
 }
