@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "folder": 0,
+    "body": "email 1",
+    "emailAction": 0,
+    "offSet": 0
+  },
+  {
+    "id": 2,
+    "folder": 0,
+    "body": "email 1",
+    "emailAction": 0,
+    "offSet": 1
+  },
+  {
+    "id": 3,
+    "folder": 0,
+    "body": "email 1",
+    "emailAction": 0,
+    "offSet": 2
+  },
+  {
+    "id": 4,
+    "folder": 0,
+    "body": "email 1",
+    "emailAction": 0,
+    "offSet": 3
+  },
+  {
+    "id": 5,
+    "folder": 0,
+    "body": "email 1",
+    "emailAction": 0,
+    "offSet": 4
+  }
+]
