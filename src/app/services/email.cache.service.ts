@@ -7,13 +7,20 @@ import { EmailService } from "./email.service";
 @Injectable()
 export class EmailCacheService{
   appEmails = new Subject<Array<AppEmail>>();
-  $emails = new Subject<IEmail>();
+  $emails = new Subject<IEmail[]>();
   constructor(private emailService: EmailService){
     
   }
   
   getEmails() : void {
-    let data = this.emailService.getAllEmails();
-    console.log(data);
+    this.emailService.getAllEmails().subscribe( (data) => {
+      console.log('got data');
+      console.log(data)
+      this.$emails.next(data);
+    });
+  }
+
+  load(){
+
   }
 }
